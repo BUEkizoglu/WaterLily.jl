@@ -1,7 +1,6 @@
 using KernelAbstractions: get_backend, @index, @kernel
 using CUDA: CuArray
-using AMDGPU: ROCArray
-GPUArray = Union{CuArray,ROCArray}
+GPUArray = Union{CuArray,Array}
 
 @inline CI(a...) = CartesianIndex(a...)
 """
